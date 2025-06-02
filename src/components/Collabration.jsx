@@ -1,6 +1,6 @@
 import { collabApps, collabContent, collabText } from "../constants";
 import Section from "./Section";
-import { brainwaveSymbol, check } from "../assets";
+import { GalaxNova, check } from "../assets";
 import Button from "./Button";
 import { LeftCurve, RightCurve } from "./design/Collaboration";
 
@@ -47,18 +47,13 @@ const Collabration = () => {
             >
               <div
                 className="w-[6rem] aspect-square m-auto
-              p-[0.2] bg-conic-gradient rounded-full"
+              p-[0.2rem] bg-conic-gradient rounded-full"
               >
                 <div
                   className="flex items-center justify-center
                 w-full h-full bg-n-8 rounded-full"
                 >
-                  <img
-                    src={brainwaveSymbol}
-                    width={48}
-                    height={48}
-                    alt="brainwave"
-                  />
+                  <img src={GalaxNova} width={48} height={48} alt="GalaxNova" />
                 </div>
               </div>
             </div>

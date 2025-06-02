@@ -16,7 +16,7 @@ const Services = () => {
       <div className="container">
         <Heading
           title="Generative AI made for creators."
-          text="Brainwave unlocks the potential of
+          text="GalaxNova unlocks the potential of
              AI-powered applications"
         />
         <div className="relative">
@@ -40,7 +40,7 @@ const Services = () => {
             <div className="relative z-1 max-w-[17rem] ml-auto">
               <h4 className="h4 mb-4">Smartest AI</h4>
               <p className="body-2 mb-[3rem] text-n-3">
-                Brainwave unlocks the potential of AI-powered applications
+                GalaxNova unlocks the potential of AI-powered applications
               </p>
               <ul className="body-2">
                 {brainwaveServices.map((item, index) => (
@@ -77,10 +77,12 @@ const Services = () => {
 
               <div
                 className="absolute inset-0 flex flex-col justify-end
-                          p-8 bg-gradient-to-b from-n-8/0 lg:p-15 "
+                          p-8 bg-gradient-to-b from-black/50  to-black/0  lg:p-15 "
               >
-                <h4 className="h4 mb-4">Photo editing</h4>
-                <p className="body-2 mb-[3rem] text-n-3">
+                <h4 className="h4 mb-4 text-white drop-shadow-md">
+                  Photo editing
+                </h4>
+                <p className="body-2 mb-[3rem] text-white drop-shadow-md">
                   Automatically enhance your photos using our AI app&apos;s
                   photo editing feature. Try it now!
                 </p>

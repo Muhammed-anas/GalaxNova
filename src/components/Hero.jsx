@@ -28,7 +28,7 @@ const Hero = () => {
           <h1 className="h1 mb-6">
             Explore the possibities of AI Chatting with {``}
             <span className="inline-block relative">
-              BrainWave
+              GalaxNova
               <img
                 src={curve}
                 className="absolute top-full left-0 w-full xl:-mt-2"
@@ -42,8 +42,8 @@ const Hero = () => {
             className="body-1 max-w-3xl mx-auto mb-6 
           text-n-2 lg:mb-8"
           >
-            Unleash the power of AI within Brainwave. Upgrade your productivity
-            with Brainwave, the open AI chat app.
+            Unleash the power of AI within GalaxNova. Upgrade your productivity
+            with GalaxNova, the open AI chat app.
           </p>
           <Button href="/pricing">Get Started</Button>
         </div>
@@ -108,7 +108,7 @@ const Hero = () => {
           >
             <img
               src={heroBackground}
-              className="w-full"
+              className="w-full opacity-35"
               width={1440}
               height={1800}
               alt="hero"

@@ -1,4 +1,4 @@
-import brainwave from "./brainwave.svg";
+import GalaxNova from "./GalaxNova.png";
 import check from "./check.svg";
 import brainwaveSymbol from "./brainwave-symbol.svg";
 import brainwaveWhiteSymbol from "./brainwave-symbol-white.svg";
@@ -22,8 +22,8 @@ import loading from "./loading.png";
 import background from "./background.jpg";
 
 import curve from "./hero/curve.png";
-import robot from "./hero/robot.jpg";
-import heroBackground from "./hero/hero-background.jpg";
+import robot from "./hero/robot.png";
+import heroBackground from "./hero/hero-background.png";
 
 import curve1 from "./collaboration/curve-1.svg";
 import curve2 from "./collaboration/curve-2.svg";
@@ -37,8 +37,8 @@ import raindrop from "./collaboration/raindrop.png";
 import slack from "./collaboration/slack.png";
 
 import service1 from "./services/service-1.png";
-import service2 from "./services/service-2.png";
-import service3 from "./services/service-3.png";
+import service2 from "./services/service-2.jpg";
+import service3 from "./services/service-3.jpg";
 
 import lines from "./pricing/lines.svg";
 import stars from "./pricing/stars.svg";
@@ -76,7 +76,7 @@ import telegram from "./socials/telegram.svg";
 import twitter from "./socials/twitter.svg";
 
 export {
-  brainwave,
+  GalaxNova,
   check,
   check2,
   loading1,

@@ -11,13 +11,14 @@ const Benefits = () => {
       <div className="container relative z-2">
         <Heading
           className="md:max-w-md lg:max-w-2xl"
-          title="Chat Smarter, Not Harder with Brainwave"
+          title="Chat Smarter, Not Harder with GalaxNova"
         />
         <div className="flex flex-wrap gap-10 mb-10">
           {benefits.map((item) => (
             <div
               className="block relative p-0.5 bg-no-repeat
-               bg-[length:100%_100%] md:max-w-[24rem]"
+               bg-[length:100%_100%] md:max-w-[24rem] hover:shadow-2xl
+                 transform transition duration-300 hover:scale-105"
               style={{ backgroundImage: `url(${item.backgroundUrl})` }}
               key={item.id}
             >
@@ -50,7 +51,7 @@ const Benefits = () => {
               >
                 <div
                   className="absolute inset-0 opacity-0
-               transition-opacity hover:opacity-10"
+               transition-opacity hover:opacity-20"
                 >
                   {item.imageUrl && (
                     <img

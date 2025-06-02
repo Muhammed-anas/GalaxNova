@@ -33,7 +33,7 @@ const Pricing = () => {
           </div>
         </div>
         <Heading
-          tag="Get started with Brainwave"
+          tag="Get started with GalaxNova"
           title="Pay once, use forever"
         />
         <div className="relative">
