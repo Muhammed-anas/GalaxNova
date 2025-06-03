@@ -13,7 +13,8 @@ const Benefits = () => {
           className="md:max-w-md lg:max-w-2xl"
           title="Chat Smarter, Not Harder with GalaxNova"
         />
-        <div className="flex flex-wrap gap-10 mb-10">
+        <div className="gap-10 mb-10 grid xs:grid-cols-1
+         md:grid-cols-2  xl:grid-cols-3 place-items-center">
           {benefits.map((item) => (
             <div
               className="block relative p-0.5 bg-no-repeat

@@ -1,6 +1,5 @@
 import { useLocation } from "react-router-dom";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
-
 import { GalaxNova } from "../assets";
 import { navigation } from "../constants";
 import Button from "./Button";
@@ -36,9 +35,9 @@ const Header = () => {
     }`}
     >
       <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4 ">
-        <a className="block w-[12rem] xl:mr-8" href="#hero">
+        <a className=" flex gap-3 items-center w-[12rem] xl:mr-8" href="#hero">
           <img src={GalaxNova} width={40} height={30} alt="GalaxNova" />
-          GalaxNova
+          <span className="text-white text-2xl font-bold font-serif">GalaxNova</span> 
         </a>
 
         <nav
