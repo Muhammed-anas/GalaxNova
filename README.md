@@ -60,10 +60,11 @@ I'm a passionate full stack developer focused on building intelligent, engaging,
 ---
 ## 💼 Other Projects
 
-- 🛍️ **Shopfy** – Full Stack eCommerce App (MERN Stack)  
-- 🚘 **Autolux** – Django-based Vehicle Services Marketplace  
-- 📝 **Bloggy** – Django-Based Blogging Platform  
-- 💻 **Responsive Developer Portfolio**
+- 🛍️ **[Shopfy](https://shopfy-ncx.netlify.app/)** – Full stack MERN-based eCommerce platform with multi-step checkout  
+- 🚘 **[Autolux](https://autolux-ntbk.onrender.com/)** – Vehicle services automation platform powered by Django  
+- 📝 **[Bloggy](https://bloggy-4xrs.onrender.com)** – Django-based blogging platform with image uploads and post management  
+
+> Explore more on my [GitHub profile](https://github.com/Muhammed-anas)
 
 ---
 ## 💬 Let's Connect
