@@ -62,6 +62,11 @@ export const navigation = [
     url: "#roadmap",
   },
   {
+    id: "6",
+    title: "Chat",
+    url: "/chat",
+  },
+  {
     id: "4",
     title: "New account",
     url: "#signup",

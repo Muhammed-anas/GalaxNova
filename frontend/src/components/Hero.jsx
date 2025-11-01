@@ -45,7 +45,7 @@ const Hero = () => {
             Unleash the power of AI within GalaxNova. Upgrade your productivity
             with GalaxNova, the open AI chat app.
           </p>
-          <Button href="/pricing">Get Started</Button>
+          <Button href="/chat">Get Started</Button>
         </div>
         <div
           className="relative max-w-[23rem] mx-auto

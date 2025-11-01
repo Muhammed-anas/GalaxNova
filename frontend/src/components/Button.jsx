@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import ButtonSvg from "../assets/svg/ButtonSvg";
 
 const Button = ({ className, href, onClick, children, px, white }) => {
@@ -13,12 +14,23 @@ const Button = ({ className, href, onClick, children, px, white }) => {
     </button>
   );
 
-  const renderLink = () => (
-    <a href={href} className={classes}>
-      <span className={spanClasses}>{children}</span>
-      {ButtonSvg(white)}
-    </a>
-  );
+  const isRoute = href?.startsWith("/");
+  const renderLink = () => {
+    if (isRoute) {
+      return (
+        <Link to={href} className={classes}>
+          <span className={spanClasses}>{children}</span>
+          {ButtonSvg(white)}
+        </Link>
+      );
+    }
+    return (
+      <a href={href} className={classes}>
+        <span className={spanClasses}>{children}</span>
+        {ButtonSvg(white)}
+      </a>
+    );
+  };
   return href ? renderLink() : renderButton();
 };
 

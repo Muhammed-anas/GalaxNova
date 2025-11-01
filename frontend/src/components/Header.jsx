@@ -1,4 +1,4 @@
-import { useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
 import { GalaxNova } from "../assets";
 import { navigation } from "../constants";
@@ -35,10 +35,10 @@ const Header = () => {
     }`}
     >
       <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4 ">
-        <a className=" flex gap-3 items-center w-[12rem] xl:mr-8" href="#hero">
+        <Link to="/" className=" flex gap-3 items-center w-[12rem] xl:mr-8">
           <img src={GalaxNova} width={40} height={30} alt="GalaxNova" />
           <span className="text-white text-2xl font-bold font-serif">GalaxNova</span> 
-        </a>
+        </Link>
 
         <nav
           className={` ${
@@ -50,35 +50,47 @@ const Header = () => {
             className="relative z-2 flex flex-col items-center justify-center
            m-auto lg:flex-row"
           >
-            {navigation.map((item) => (
-              <a
-                key={item.id}
-                href={item.url}
-                onClick={handleClick}
-                className={`block relative font-code text-2xl uppercase
-                   text-n-1 transition-colors hover:text-color-1 ${
-                     item.onlyMobile ? "lg:hidden" : ""
-                   } px-6 py-6 md:py-8 lg-mr-0.25 lg:text-xs
-                     lg:font-semibold ${
-                       item.url === pathname.hash
-                         ? "z-2 lg:text-n-1"
-                         : "lg:text-n-1/50"
-                     } lg:leading-5 lg:hover:text-n-1 xl:px-12`}
-              >
-                {item.title}
-              </a>
-            ))}
+            {navigation.map((item) => {
+              const isRoute = item.url.startsWith("/");
+              const isActive = isRoute 
+                ? pathname.pathname === item.url
+                : pathname.hash === item.url;
+              
+              const NavComponent = isRoute ? Link : "a";
+              const navProps = isRoute 
+                ? { to: item.url }
+                : { href: item.url };
+
+              return (
+                <NavComponent
+                  key={item.id}
+                  {...navProps}
+                  onClick={handleClick}
+                  className={`block relative font-code text-2xl uppercase
+                     text-n-1 transition-colors hover:text-color-1 ${
+                       item.onlyMobile ? "lg:hidden" : ""
+                     } px-6 py-6 md:py-8 lg-mr-0.25 lg:text-xs
+                       lg:font-semibold ${
+                         isActive
+                           ? "z-2 lg:text-n-1"
+                           : "lg:text-n-1/50"
+                       } lg:leading-5 lg:hover:text-n-1 xl:px-12`}
+                >
+                  {item.title}
+                </NavComponent>
+              );
+            })}
           </div>
           <HamburgerMenu />
         </nav>
-        <a
-          href="#signup"
+        <Link
+          to="/signup"
           className="button hidden mr-8 text-n-1/50 transition-colors
             hover:text-n-1 lg:block"
         >
           New account
-        </a>
-        <Button className="hidden lg:flex" href="#login">
+        </Link>
+        <Button className="hidden lg:flex" href="/login">
           Sign in
         </Button>
 

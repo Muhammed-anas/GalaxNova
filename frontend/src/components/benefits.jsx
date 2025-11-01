@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Section from "./Section";
 import { benefits } from "../constants";
 import Heading from "./Heading";
@@ -29,7 +30,7 @@ const Benefits = () => {
               >
                 <h5 className="h5 mb-5">{item.title}</h5>
                 <p className="body-2 mb-6 text-n-3">{item.text}</p>
-                <div className="flex items-center mt-auto">
+                <Link to="/chat" className="flex items-center mt-auto cursor-pointer pointer-events-auto">
                   <img
                     src={item.iconUrl}
                     width={48}
@@ -43,7 +44,7 @@ const Benefits = () => {
                     Explore more
                   </p>
                   <Arrow />
-                </div>
+                </Link>
               </div>
               {item.light && <GradientLight />}
               <div
